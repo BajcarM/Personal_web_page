@@ -15,7 +15,7 @@
         transform: none;
         top: 0;
         opacity: 1;
-        height: 7vh;
+        height: 10vh;
         padding: 0;
         padding-right: 30px;        
         background-color: $color-1;
@@ -27,7 +27,7 @@
           & a.menu-nav__link {
             color: $color-2;
             width: 150px;
-            height: 7vh;
+            height: 10vh;
 
             &:hover {
               background-color: $color-2;

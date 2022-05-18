@@ -4,14 +4,16 @@ const projectsContainer = document.querySelector(".projects__container");
 const menuButton = document.querySelector(".menu-btn");
 const menuButtonBurger = document.querySelector(".menu-btn__burger");
 const menu = document.querySelector(".menu-nav");
+const navItems = document.querySelectorAll(".menu-nav__link");
 
 menuButton.addEventListener("click", () => {
   menu.classList.toggle("open");
   menuButtonBurger.classList.toggle("open");
 });
 
-projectsContainer.innerHTML = projects.map((project) => {
-  return `
+projectsContainer.innerHTML = projects
+  .map((project) => {
+    return `
         <div class="project">
             <img src="./images/projects/${project.name}.png"
               alt="project__image"/>
@@ -32,4 +34,13 @@ projectsContainer.innerHTML = projects.map((project) => {
               </p>
             </article>
           </div>`;
-}).join('');
+  })
+  .join("");
+
+for (const item of navItems) {
+  item.addEventListener("click", () => {
+    menuButton.classList.remove("open");
+    menuButtonBurger.classList.remove("open");
+    menu.classList.remove("open");
+  });
+}
