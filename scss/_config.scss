@@ -1,0 +1,33 @@
+$color-1: #5b5963ff;
+$color-2: #f2ede4ff;
+$color-3: #e8e6e7ff;
+
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $color-1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}
+
+@mixin contact-icon {
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-size: contain;
+  margin: 1rem;
+}
+
+@mixin transition-ease {
+  transition: all 1s ease-in-out;
+}

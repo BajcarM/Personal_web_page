@@ -1,0 +1,105 @@
+.menu-btn {
+  @include grid-center;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 10;
+  height: 30px;
+  width: 30px;
+
+  
+
+  &__burger {
+    position: relative;
+    height: 5px;
+    width: 28px;
+    background-color: $color-1;
+    @include transition-ease;
+    border-radius: 3px;
+
+    &::before {
+      position: absolute;
+      transform: translateY(-10px);
+      content: "";
+      height: 5px;
+      width: 28px;
+      background-color: $color-1;
+      @include transition-ease;
+      border-radius: 3px;
+    }
+
+    &::after {
+      position: absolute;
+      transform: translateY(10px);
+      content: "";
+      height: 5px;
+      width: 28px;
+      background-color: $color-1;
+      @include transition-ease;
+      border-radius: 3px;
+    }
+
+    &.open {
+      background-color: transparent;
+      transform: rotate(180deg);
+      @include transition-ease;
+
+      &::before {
+        background-color: $color-2;
+        transform: rotate(225deg);
+        @include transition-ease;
+      }
+
+      &::after {
+        background-color: $color-2;
+        transform: rotate(135deg);
+        @include transition-ease;
+      }
+    }
+  }
+}
+
+nav {
+    height: 0;
+
+  & .menu-nav {
+   
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30vh;
+
+    height: 100vh;
+    width: 100vw;
+
+    opacity: 0.95;
+    background-color: $color-1;
+    transform: translateY(-100%);
+    @include transition-ease;
+
+    &.open {
+      transform: translateY(0);
+      @include transition-ease;
+    }
+
+    & li {
+      list-style-type: none;
+      padding: 0;
+
+      & a {
+        @include grid-center;
+        text-decoration: none;
+        color: $color-3;
+        font-size: 1.5rem;
+        width: 100vw;
+        height: 4rem;
+
+        &:hover, :active {
+          background-color: $color-2;
+          color: $color-1;
+        }
+      }
+    }
+  }
+}

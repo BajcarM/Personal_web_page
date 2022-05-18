@@ -1,0 +1,56 @@
+
+.projects__header{
+@include grid-center;
+height: 10vh;
+margin-bottom: 2rem;
+& h2{
+    font-size: 2rem;
+}
+
+& h3{
+    font-size: 1rem;
+}
+
+}
+
+.projects__container {
+
+  
+  @include grid-center;
+  gap: 2rem;
+
+  
+
+  & .project {
+    @include grid-center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+   
+
+    & img {
+      width: 100%;
+      object-fit: contain;
+      max-width: 500px;
+    }
+
+    & article{
+
+        text-align: justify;
+
+        & p{
+            width: 100%;
+            margin-top: 1rem;
+           
+        }
+        & p a{
+           
+           
+            color: rgb(0, 132, 255);
+            font-style: italic;
+            text-decoration: none;
+        }
+    }
+
+
+  }
+}

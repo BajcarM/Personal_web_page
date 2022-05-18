@@ -1,0 +1,54 @@
+.contacts__header {
+  @include grid-center;
+  height: 10vh;
+  margin-bottom: 2rem;
+
+  & h2 {
+    font-size: 2rem;
+    color: $color-2;
+  }
+}
+
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin-top: 20vh;
+  height: 50vh;
+
+
+
+  & .contact {
+      display: flex;
+      
+    &__github {
+      color: $color-2;
+      display: flex;
+      align-items: center;
+    }
+
+    &__email {
+      color: $color-2;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "bajcar.m";
+      }
+
+      &::after {
+        content: "gmail.com";
+      }
+    }
+
+    &__icon-github {
+      @include contact-icon;
+      background-image: url(../images/icons8-github-64.png);
+    }
+
+    &__icon-email {
+      @include contact-icon;
+      background-image: url(../images/icons8-email-sign-50.png);
+    }
+  }
+}
