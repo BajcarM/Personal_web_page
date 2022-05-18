@@ -1,8 +1,9 @@
 
 .projects__header{
 @include grid-center;
-height: 10vh;
+height: 15vh;
 margin-bottom: 2rem;
+
 & h2{
     font-size: 2rem;
 }
@@ -23,9 +24,14 @@ margin-bottom: 2rem;
 
   & .project {
     @include grid-center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-   
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    &:nth-child(odd){
+        background-color: $color-2;
+        
+    }
 
     & img {
       width: 100%;

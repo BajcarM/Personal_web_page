@@ -1,41 +1,37 @@
 
 
 header {
-    
-    position: fixed;
-    
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 10vh;
-    background-color: $color-2;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 7vh;
+  background-color: $color-2;
 }
 
-main{
-    max-width: 1250px;
-    margin: 0 auto;
-    
+main {
+  max-width: 1250px;
+  margin: 0 auto;
 
-& section {
-  padding-top: 10vh;
-  min-height: 100vh;
-  
+  & section {
+    padding-top: 10vh;
+    min-height: 100vh;
+    padding-bottom: 5vh;
 
-  &#home {
-    background-color: $color-2;
-  }
+    &#home {
+      background-color: $color-2;
+    }
 
-  &#projects{
+    &#projects {
       background-color: rgb(255, 255, 255);
+    }
+
+    &#contacts {
+      background-color: $color-1;
+
       padding-left: 1rem;
       padding-right: 1rem;
+    }
   }
-
-  &#contacts{
-    background-color: $color-1;
-   
-    padding-left: 1rem;
-      padding-right: 1rem;
-  }
-}
 }

@@ -1,6 +1,6 @@
 .contacts__header {
   @include grid-center;
-  height: 10vh;
+  height: 15vh;
   margin-bottom: 2rem;
 
   & h2 {
@@ -20,7 +20,7 @@
 
   & .contact {
       display: flex;
-      
+
     &__github {
       color: $color-2;
       display: flex;

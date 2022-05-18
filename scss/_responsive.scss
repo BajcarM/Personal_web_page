@@ -1,0 +1,47 @@
+@media (min-width: 768px) {
+  header {
+    .menu-btn {
+      visibility: hidden;
+    
+    }
+
+    background-color: $color-1;
+
+    nav {
+      @include grid-center;
+      & .menu-nav {
+        max-width: 1250px;
+        position: fixed;
+        transform: none;
+        top: 0;
+        opacity: 1;
+        height: 7vh;
+        padding: 0;
+        padding-right: 30px;        
+        background-color: $color-1;
+        align-items: center;
+        justify-content: end;
+        flex-direction: row;
+
+        & li {
+          & a.menu-nav__link {
+            color: $color-2;
+            width: 150px;
+            height: 7vh;
+
+            &:hover {
+              background-color: $color-2;
+              color: $color-1;
+              
+            }
+
+            &.active {
+              background-color: $color-2;
+              color: $color-1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
