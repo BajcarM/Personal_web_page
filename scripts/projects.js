@@ -1,5 +1,6 @@
 export const projects = [
   {
+    label: "Visualization Pathfinder Algorithm",
     name: "Visualization-Pathfinder-Algorithm",
     linkPage: "https://bajcarm.github.io/Visualization-Pathfinder-Algorithm/",
     linkGithub: "https://github.com/BajcarM/Visualization-Pathfinder-Algorithm",
@@ -11,6 +12,7 @@ export const projects = [
         JavaScript and some CSS for styling.`,
   },
   {
+    label: "Maze Generator",
     name: "Maze_Generator",
     linkPage: "https://bajcarm.github.io/Maze_Generator/",
     linkGithub: "https://github.com/BajcarM/Maze_Generator",
@@ -20,8 +22,8 @@ export const projects = [
         Uses <b>Recursive backtracker algorithm</b>.<br>   
         Best fits big screens.`,
   },
-
   {
+    label: "Visualizer Sight & Obstacles",
     name: "Visualizer_Sight_and_Obstacles",
     linkPage: "https://bajcarm.github.io/Visualizer_Sight_and_Obstacles/",
     linkGithub: "https://github.com/BajcarM/Visualizer_Sight_and_Obstacles",
@@ -31,17 +33,8 @@ export const projects = [
         <b>Tiles will change color</b> based on walls shadow.<br>
         I used JavaScript to compute the visibility, based on the <b>angle</b> between every Tile, Wall and Lightbulb.`,
   },
-  //   {
-  //     name: "Visualizer_Sight_and_Obstacles",
-  //     linkPage: "https://bajcarm.github.io/Visualizer_Sight_and_Obstacles/",
-  //     linkGithub: "https://github.com/BajcarM/Visualizer_Sight_and_Obstacles",
-  //     article: `
-  //         Yust a little project to visualize line of sight - or shadow.<br>
-  //         Place some Walls and then the Lightbulb.
-  //         <br><b>Tiles will change color</b> based on walls shadow.<br>
-  //         I used JS to compute the visibility based on the angle between every Tile, Wall and Lightbulb.`,
-  //   },
   {
+    label: "Game Mouse In Maze",
     name: "Game_Mouse_In_Maze",
     linkPage: "https://bajcarm.github.io/Game_Mouse_In_Maze/",
     linkGithub: "https://github.com/BajcarM/Game_Mouse_In_Maze",
@@ -53,6 +46,7 @@ export const projects = [
         I used the maze algorithm from my previous project Maze_Generator.`,
   },
   {
+    label: "Drag and Drop game",
     name: "Drag_and_Drop_game",
     linkPage: "https://bajcarm.github.io/Drag_and_Drop_game/",
     linkGithub: "https://github.com/BajcarM/Drag_and_Drop_game",
