@@ -18,7 +18,7 @@ projectsContainer.innerHTML = projects
             <img src="./images/projects/${project.name}.png"
               alt="project__image"/>
             <article class="project__article">
-              <h2 class="project__name">${project.name}</h2>
+              <h2 class="project__name">${project.label}</h2>
               <p class="project__text">
                 ${project.article}
               </p>
